@@ -5,22 +5,22 @@ const Contact = () => {
         <SectionWrapper delay={0.5}>
             <section
                 id="contact"
-                className="relative overflow-hidden py-24"
+                className="relative flex min-h-screen flex-col justify-center overflow-hidden py-24"
             >
                 <div className="mx-auto max-w-4xl px-6 text-center">
 
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-                        Contact
+                        Let's Connect
                     </p>
 
                     <h2 className="text-4xl font-bold text-white md:text-5xl">
-                        Let's Build Something Great.
+                        Got something worth building?
                     </h2>
 
                     <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-                        Whether you have an internship opportunity,
-                        an exciting project, or simply want to connect,
-                        I'd love to hear from you.
+                        I'm always open to interesting projects, collaborations, internships,
+                        and software development opportunities. Or if you just want to talk
+                        tech and ideas, my inbox is open.
                     </p>
 
                     <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

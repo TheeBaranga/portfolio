@@ -8,17 +8,35 @@ function Skills() {
         <SectionWrapper delay={0.2}>
             <section
                 id="skills"
-                className="mx-auto relative max-w-7xl px-6 py-24"
+                className="relative mx-auto max-w-7xl scroll-mt-6 px-6 py-28"
             >
-                <h2 className="text-4xl font-bold text-white">
-                    Skills
-                </h2>
+                {/* Heading */}
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.5 }}
+                    className="mx-auto max-w-3xl text-center"
+                >
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+                        My Skills
+                    </p>
 
-                <p className="mt-4 max-w-2xl text-slate-400">
-                    Technologies I use to build modern, secure, and maintainable software.
-                </p>
+                    <h2 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                        Technologies I{" "}
+                        <span className="text-blue-400">
+                            use
+                        </span>
+                    </h2>
 
-                <div className="mt-12 grid gap-6 md:grid-cols-2">
+                    <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">
+                        The tools and technologies I reach for when turning
+                        ideas into working products.
+                    </p>
+                </motion.div>
+
+                {/* Skill groups */}
+                <div className="mx-auto mt-14 grid max-w-5xl gap-6 md:grid-cols-2">
                     {skillGroups.map((group, index) => (
                         <motion.div
                             key={group.title}
@@ -27,8 +45,9 @@ function Skills() {
                             viewport={{ once: true, amount: 0.2 }}
                             transition={{
                                 duration: 0.5,
-                                delay: index * 0.1,
+                                delay: index * 0.08,
                             }}
+                            className="h-full"
                         >
                             <SkillCard
                                 title={group.title}
@@ -39,7 +58,6 @@ function Skills() {
                 </div>
             </section>
         </SectionWrapper>
-
     );
 }
 

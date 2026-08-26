@@ -6,13 +6,16 @@ function SkillCard({ title, skills }) {
             </h3>
 
             <ul className="space-y-3">
-                {skills.map(({ name, icon: Icon }) => {
+                {skills.map(({ name, icon: Icon, color }) => {
                     return (
                         <li
                             key={name}
                             className="flex items-center gap-3 text-slate-400"
                         >
-                            <Icon className="text-lg text-blue-400" />
+                            <Icon
+                                className="text-xl"
+                                style={{ color: color || undefined }}
+                            />
                             <span>{name}</span>
                         </li>
                     );
