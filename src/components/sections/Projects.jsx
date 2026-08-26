@@ -3,64 +3,96 @@ import { projects } from "../../data/projects";
 import { motion } from "framer-motion";
 
 function Projects() {
-
-  const featuredProjects = projects.slice(0, 3);
-  const otherProjects = projects.slice(3);
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section id="projects" className="py-24 relative">
+    <section id="projects" className="relative py-24">
       <div className="mx-auto max-w-6xl px-6">
+
+        {/* Section heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
+          className="mb-12"
         >
-          <h2 className="mb-3 text-4xl font-bold text-white">
-            Featured Projects
+          <p className="mb-3 font-mono text-sm uppercase tracking-[0.2em] text-blue-400">
+            Selected Work
+          </p>
+
+          <h2 className="max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl">
+            Things I've built.
           </h2>
 
-          <p className="mb-12 text-slate-400">
-            A selection of projects that best represent my skills and interests.
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-400">
+            A mix of products I'm building, ideas I've explored, and projects
+            that have taught me something along the way.
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          {featuredProjects.map((project, index) => (
+        {/* Featured projects */}
+        <div className="space-y-8">
+          {featuredProjects[0] && (
             <motion.div
-              key={project.title}
-              className={index === 0 ? "lg:col-span-2" : ""}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.15,
-              }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={featuredProjects[0]} />
             </motion.div>
-          ))}
-        </div>
-      {otherProjects.length > 0 && (
-        <>
-
-          <h3 className="mt-20 mb-8 text-2xl font-semibold text-white">
-            Other Projects
-          </h3>
+          )}
 
           <div className="grid gap-8 md:grid-cols-2">
-            {otherProjects.map((project) => (
-              <ProjectCard
+            {featuredProjects.slice(1, 3).map((project, index) => (
+              <motion.div
                 key={project.title}
-                project={project}
-              />
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.5,
+                  delay: (index + 1) * 0.12,
+                }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
             ))}
           </div>
-        </>
-      )}
-    </div>
-    </section >
+        </div>
+
+        {/* More projects */}
+        {otherProjects.length > 0 && (
+          <motion.div
+            className="mt-20"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="mb-8 flex items-center gap-4">
+              <h3 className="text-2xl font-semibold text-white">
+                More Projects
+              </h3>
+
+              <div className="h-px flex-1 bg-slate-800" />
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2">
+              {otherProjects.map((project) => (
+                <ProjectCard
+                  key={project.title}
+                  project={project}
+                />
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+      </div>
+    </section>
   );
 }
 
