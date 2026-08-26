@@ -9,7 +9,7 @@
 ### *Application Security • DevSecOps • Software Engineering*
 
 <p align="center">
-  <a href="https://theebaranga.github.io/secure-portfolio/">
+  <a href="https://theebaranga.github.io/portfolio/">
     <img src="https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
 
@@ -88,13 +88,13 @@ src/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/TheeBaranga/secure-portfolio.git
+git clone https://github.com/TheeBaranga/portfolio.git
 ```
 
 ### Navigate into the project
 
 ```bash
-cd secure-portfolio
+cd portfolio
 ```
 
 ### Install dependencies
@@ -127,7 +127,7 @@ npm run preview
 
 **GitHub Pages**
 
-> https://theebaranga.github.io/secure-portfolio/
+> https://theebaranga.github.io/portfolio/
 
 *(Deployment currently hosted on GitHub Pages. Vercel deployment coming soon.)*
 

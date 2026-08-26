@@ -14,7 +14,7 @@ export const projects = [
     title: "Secure Portfolio",
     description: "Modern developer portfolio built with React, Tailwind CSS and Framer Motion to showcase software engineering projects and skills.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/TheeBaranga/secure-portfolio.git",
+    github: "https://github.com/TheeBaranga/portfolio.git",
     live: "",
     image: `${import.meta.env.BASE_URL}images/portfolio.png`,
   },
