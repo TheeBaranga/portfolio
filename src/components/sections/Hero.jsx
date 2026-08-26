@@ -3,8 +3,16 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center px-6 relative py-20">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-2">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center overflow-hidden px-6 py-24"
+    >
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute right-12 top-1/3 h-56 w-56 rounded-full bg-cyan-400/5 blur-3xl" />
+      </div>
+
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:gap-20">
 
         {/* LEFT SIDE */}
 
@@ -18,9 +26,9 @@ function Hero() {
           }}
         >
 
-          <span className="rounded-full border border-blue-500 px-4 py-2 text-sm text-blue-400">
+          <span className="inline-flex rounded-full border border-blue-500/50 bg-blue-500/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300 backdrop-blur-sm">
             <span className="sm:hidden">
-              APPSEC • DEVSECOPS
+              FULL-STACK • BACKEND
             </span>
 
             <span className="hidden sm:inline">
@@ -47,11 +55,11 @@ function Hero() {
           <div className="mt-10 flex flex-wrap gap-4">
 
             <button className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30">
-            {hero.buttons.primary}
+              {hero.buttons.primary}
             </button>
 
             <button className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-white">
-            {hero.buttons.secondary}
+              {hero.buttons.secondary}
             </button>
 
           </div>
@@ -71,9 +79,18 @@ function Hero() {
           }}
         >
 
-          <h3 className="text-xl font-semibold text-white">
-            🔒 Security Profile
-          </h3>
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
+                Developer Snapshot
+              </p>
+
+              <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white">
+                Full-Stack, backend-leaning.
+              </h3>
+            </div>
+
+          </div>
 
           <div className="mt-8">
 
@@ -82,7 +99,7 @@ function Hero() {
             </h4>
 
             <p className="mt-2 text-green-400">
-              🟢 {hero.status}
+              {hero.status}
             </p>
 
           </div>
@@ -90,7 +107,7 @@ function Hero() {
           <div className="mt-8">
 
             <h4 className="text-sm uppercase tracking-wider text-slate-500">
-              Focus Areas
+              Focus
             </h4>
 
             <ul className="mt-3 space-y-2">
@@ -108,7 +125,7 @@ function Hero() {
           <div className="mt-8">
 
             <h4 className="text-sm uppercase tracking-wider text-slate-500">
-              Languages
+              Core Stack
             </h4>
 
             <div className="mt-3 flex flex-wrap gap-2">
@@ -126,25 +143,27 @@ function Hero() {
 
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 border-t border-slate-800 pt-7">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h4 className="text-sm uppercase tracking-wider text-slate-500">
+                  Currently Building
+                </h4>
 
-            <h4 className="text-sm uppercase tracking-wider text-slate-500">
-              Currently Learning
-            </h4>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Motii
+                </p>
 
-            <div className="mt-3 flex flex-wrap gap-2">
+                <p className="mt-1 max-w-sm text-sm leading-6 text-slate-400">
+                  A vehicle maintenance and intelligence platform built around mileage,
+                  care, insurance, and a personal vehicle assistant.
+                </p>
+              </div>
 
-              {hero.learning.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-md border border-slate-700 px-3 py-1 text-sm text-slate-300"
-                >
-                  {item}
-                </span>
-              ))}
-
+              <div className="shrink-0 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-300">
+                In Build
+              </div>
             </div>
-
           </div>
 
         </motion.div>

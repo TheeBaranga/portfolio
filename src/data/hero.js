@@ -1,39 +1,35 @@
 export const hero = {
-  badge: "APPSEC • DEVSECOPS • SOFTWARE ENGINEERING",
+  badge: "SOFTWARE ENGINEERING • FULL-STACK • BACKEND",
 
-  heading: "Building Secure Software,\nNot Just Software.",
+  heading: "Building Ideas Into\nReal Products.",
 
   name: "Kalvin Baranga",
 
   subtitle:
-    "Software Engineering Student specializing in Application Security and DevSecOps.",
+    "Software Engineering student and Full-Stack Developer with a growing focus on backend development.",
 
   description:
-    "I build secure applications that integrate security into every stage of the Software Development Life Cycle.",
+    "I like taking ideas from ‘what if?’ to something that actually works — figuring out the logic, building the backend, connecting the pieces, and learning a lot along the way.",
 
   buttons: {
-    primary: "View Projects",
+    primary: "View My Work",
     secondary: "Download Resume",
   },
 
-  status: "Open to Internships",
+  status: "Open to Opportunities",
 
   focus: [
-    "Application Security",
-    "Secure SDLC",
-    "DevSecOps",
+    "Full-Stack Development",
+    "Backend Development",
+    "Product Engineering",
   ],
 
   languages: [
-    "C#",
-    "Java",
     "Python",
+    "Django",
     "JavaScript",
+    "React",
   ],
 
-  learning: [
-    "Docker",
-    "GitHub Actions",
-    "Linux",
-  ],
+  learning: [],
 };
