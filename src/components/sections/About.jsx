@@ -16,15 +16,15 @@ function About() {
                     </p>
 
                     <h2 className="text-4xl font-bold text-white md:text-5xl">
-                        Building Software With Purpose
+                        I Learn By Building.
                     </h2>
                 </div>
 
                 {/* Introduction */}
                 <p className="max-w-3xl text-lg leading-8 text-slate-400">
-                    I'm a third-year Software Engineering student at USIU-Africa, building
-                    modern full-stack applications while growing into secure software
-                    engineering.
+                    I'm a third-year Software Engineering student at USIU-Africa who learns
+                    best by building. I enjoy taking an idea, figuring out how it should work,
+                    and turning it into something people can actually use.
                 </p>
 
                 {/* Cards */}
@@ -32,20 +32,21 @@ function About() {
                     {/* Command Blocks */}
                     <CommandBlock
                         command="whoami"
-                        title="Third-Year Software Engineering Student"
-                        subtitle="USIU-Africa"
+                        title="Software Engineering Student"
+                        subtitle="Third year · USIU-Africa"
                     />
 
                     <CommandBlock
                         command="building"
-                        title="Modern Full-Stack Applications"
-                        subtitle="Responsive, user-focused web experiences"
+                        title="Ideas Into Working Products"
+                        subtitle="From backend logic to the interface people use"
+                        featured
                     />
 
                     <CommandBlock
-                        command="learning"
-                        title="Application Security & DevSecOps"
-                        subtitle="Designing software that's secure and reliable"
+                        command="direction"
+                        title="Backend & Product Engineering"
+                        subtitle="The side of software I find myself drawn to most"
                     />
 
                 </div>
