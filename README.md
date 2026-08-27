@@ -10,6 +10,16 @@
 
 [View the live portfolio](https://theebaranga.github.io/portfolio/)
 
+<p>
+  <a href="https://theebaranga.github.io/portfolio/">
+    <img src="https://img.shields.io/badge/Live_Portfolio-B74B32?style=for-the-badge&logo=githubpages&logoColor=white" alt="View live portfolio" />
+  </a>
+  <img src="https://img.shields.io/badge/React_19-17211B?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite_8-17211B?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite 8" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS_4-17211B?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS 4" />
+  <img src="https://img.shields.io/badge/Responsive-17211B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Responsive design" />
+</p>
+
 </div>
 
 ## About
