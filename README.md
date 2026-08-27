@@ -1,190 +1,99 @@
 <p align="center">
-  <img src="docs/portfolio-demo.gif" alt="Portfolio Demo" width="100%" />
+  <img src="" alt="Kalvin Baranga portfolio preview" width="100%" />
 </p>
 
 <div align="center">
 
-# Secure Portfolio
+# Kalvin Baranga — Portfolio
 
-### *Application Security • DevSecOps • Software Engineering*
+### Building ideas into real products.
 
-<p align="center">
-  <a href="https://theebaranga.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" />
-  </a>
-
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
-
-  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-
-  <img src="https://img.shields.io/badge/Responsive-✓-22C55E?style=for-the-badge" />
-</p>
-
-A modern, responsive portfolio showcasing my projects, technical skills, and passion for building **secure**, **high-quality software**.
+[View the live portfolio](https://theebaranga.github.io/portfolio/)
 
 </div>
 
----
+## About
 
-## Overview
+My personal portfolio presents the projects I am building and the direction I am developing as a software engineer.
 
-This portfolio was built to demonstrate both my software engineering skills and my focus on modern Application Security and DevSecOps practices.
+I am a third-year Software Engineering student at USIU-Africa and a full-stack developer with a growing focus on backend and product engineering. The site is designed to communicate that story clearly: ambitious, grounded, and supported by real work.
 
-Beyond showcasing projects, the goal was to build a polished experience with smooth animations, responsive layouts, accessibility, and clean component architecture.
+## Design direction
 
----
+The interface uses an understated editorial style instead of a conventional dark developer theme. Strong typography, warm neutral colors, restrained motion, and generous spacing allow the work and writing to carry the experience.
 
-## Features
+The layout is responsive across small phones, larger mobile devices, tablets, and laptop displays.
 
-- Modern dark UI
-- Fully responsive design
-- Smooth scroll animations
-- Premium mobile navigation drawer
-- Background blur overlay
-- Interactive project cards
-- Featured projects section
-- Technical skills showcase
-- Downloadable résumé
-- Contact section
-- Accessible, semantic markup
+## Highlights
 
----
+- Responsive, mobile-first layout
+- Animated mobile navigation with working section links
+- Accessible keyboard focus and reduced-motion support
+- Selected project case studies with clear engineering focus
+- Dedicated About, Toolkit, Work, and Contact sections
+- Branded typography, colors, and text-selection styling
+- Semantic page metadata for search and social sharing
+- GitHub Pages deployment workflow
 
-## Tech Stack
+## Featured work
 
-| Category | Technologies |
-|----------|--------------|
-| Frontend | React, Vite |
-| Styling | Tailwind CSS |
-| Icons | React Icons |
-| Deployment | GitHub Pages *(Vercel coming soon)* |
-| Version Control | Git & GitHub |
+- **Motii** — A vehicle maintenance and intelligence platform that helps drivers stay ahead of maintenance, renewals, and the surprises of car ownership.
+- **Sleep Health Predictor** — An end-to-end machine-learning application served through a Flask interface.
+- **Car Fault Diagnosis Expert System** — A rule-based system for reasoning over vehicle symptoms and potential faults.
+- **E-Commerce Platform** — A modular JavaScript storefront with asynchronous product loading, cart management, and order tracking.
 
----
+## Built with
 
-## Project Structure
+| Area | Technology |
+| --- | --- |
+| Interface | React 19 |
+| Build tooling | Vite 8 |
+| Styling | Tailwind CSS 4 |
+| Motion | Framer Motion |
+| Icons | Lucide React and React Icons |
+| Hosting | GitHub Pages |
 
-```text
-src/
-│
-├── assets/
-├── components/
-│   ├── layout/
-│   ├── sections/
-│   └── ui/
-│
-├── data/
-├── hooks/
-├── App.jsx
-└── main.jsx
-```
-
----
-
-## Getting Started
-
-### Clone the repository
+## Run locally
 
 ```bash
 git clone https://github.com/TheeBaranga/portfolio.git
-```
-
-### Navigate into the project
-
-```bash
 cd portfolio
-```
-
-### Install dependencies
-
-```bash
 npm install
-```
-
-### Run the development server
-
-```bash
 npm run dev
 ```
 
-### Build for production
+Create a production build:
 
 ```bash
 npm run build
 ```
 
-### Preview production build
+Run the code-quality check:
 
 ```bash
-npm run preview
+npm run lint
 ```
 
----
+## Project structure
 
-## Live Demo
+```text
+src/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+├── data/
+├── App.jsx
+├── index.css
+└── main.jsx
+```
 
-**GitHub Pages**
+## Connect
 
-> https://theebaranga.github.io/portfolio/
-
-*(Deployment currently hosted on GitHub Pages. Vercel deployment coming soon.)*
-
----
-
-## What I Learned
-
-Building this project strengthened my understanding of:
-
-- Responsive UI design
-- Component-based architecture
-- Modern React development
-- Tailwind CSS best practices
-- Animation and micro-interactions
-- Git workflow and deployment
-- Performance optimization
-- Accessibility principles
+- [GitHub](https://github.com/TheeBaranga)
+- [LinkedIn](https://www.linkedin.com/in/kalvinbaranga)
+- [Portfolio](https://theebaranga.github.io/portfolio/)
 
 ---
 
-## Future Improvements
-
-- [ ] Deploy on Vercel
-- [ ] Blog section
-- [ ] Dark/Light theme toggle
-- [ ] Project filtering
-- [ ] Command palette
-- [ ] More case studies
-- [ ] Performance analytics
-
----
-
-## About Me
-
-I'm passionate about building secure, scalable software and continuously improving my skills in Software Engineering, Application Security, and DevSecOps.
-
-I'm always looking for opportunities to collaborate, learn, and contribute to impactful projects.
-
----
-
-## Connect With Me
-
-- GitHub: **https://github.com/TheeBaranga**
-- LinkedIn: **https://www.linkedin.com/in/kalvinbaranga**
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
-
-It helps others discover the project and motivates me to keep improving it.
-
----
-
-<div align="center">
-
-Built by **Kalvin Baranga**
-
-</div>
+<p align="center">Designed and built by <strong>Kalvin Baranga</strong> in Nairobi, Kenya.</p>
