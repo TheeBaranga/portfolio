@@ -12,12 +12,12 @@
 
 <p>
   <a href="https://theebaranga.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/Live_Portfolio-B74B32?style=for-the-badge&logo=githubpages&logoColor=white" alt="View live portfolio" />
+    <img src="https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="View live portfolio" />
   </a>
-  <img src="https://img.shields.io/badge/React_19-17211B?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
-  <img src="https://img.shields.io/badge/Vite_8-17211B?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite 8" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS_4-17211B?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS 4" />
-  <img src="https://img.shields.io/badge/Responsive-17211B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Responsive design" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 8" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" />
+  <img src="https://img.shields.io/badge/Responsive-%E2%9C%93-22C55E?style=for-the-badge" alt="Responsive design" />
 </p>
 
 </div>
