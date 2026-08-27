@@ -1,76 +1,23 @@
+import { ArrowUpRight, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import SectionWrapper from "../ui/SectionWrapper";
 
-const Contact = () => {
-    return (
-        <SectionWrapper delay={0.5}>
-            <section
-                id="contact"
-                className="relative flex min-h-screen flex-col justify-center overflow-hidden py-24"
-            >
-                <div className="mx-auto max-w-4xl px-6 text-center">
-
-                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-                        Let's Connect
-                    </p>
-
-                    <h2 className="text-4xl font-bold text-white md:text-5xl">
-                        Got something worth building?
-                    </h2>
-
-                    <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-                        I'm always open to interesting projects, collaborations, internships,
-                        and software development opportunities. Or if you just want to talk
-                        tech and ideas, my inbox is open.
-                    </p>
-
-                    <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-
-                        <a
-                            href="mailto:kalvinkiprop@gmail.com"
-                            className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500"
-                        >
-                            Get in Touch
-                        </a>
-
-                        <a
-                            href="https://github.com/TheeBaranga"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-blue-500 hover:text-blue-400"
-                        >
-                            GitHub
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/kalvinbaranga"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-blue-500 hover:text-blue-400"
-                        >
-                            LinkedIn
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div className="mx-auto mt-20 max-w-6xl px-6">
-                    <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
-
-                    <div className="mt-8 flex flex-col items-center justify-between gap-4 text-sm text-slate-500 md:flex-row">
-                        <p>
-                            © {new Date().getFullYear()} Kalvin Baranga.
-                        </p>
-
-                        <p>
-                            Built with React, Tailwind CSS & Framer Motion.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </SectionWrapper>
-
-    );
-};
-
+function Contact() {
+  return (
+    <section id="contact" className="section-pad border-t border-line bg-ink px-6 text-paper">
+      <SectionWrapper><div className="mx-auto max-w-6xl">
+        <p className="eyebrow !text-paper/50">04 / Contact</p>
+        <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_22rem] lg:items-end lg:gap-20">
+          <div><h2 className="max-w-4xl text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.95] tracking-[-.06em]">I’m ready to learn, contribute, and build.</h2><p className="mt-8 max-w-2xl text-lg leading-8 text-paper/65">I’m open to internships, junior software engineering roles, and thoughtful collaborations. If the work involves useful products and good people, I’d like to hear about it.</p><a href="mailto:kalvinkiprop@gmail.com" className="mt-10 inline-flex items-center gap-3 rounded-full bg-paper px-5 py-3 font-semibold text-ink transition hover:-translate-y-0.5">Start a conversation <ArrowUpRight size={18} /></a></div>
+          <div className="space-y-4 border-t border-paper/15 pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            <a href="mailto:kalvinkiprop@gmail.com" className="social-link"><Mail size={18} /> Email</a>
+            <a href="https://www.linkedin.com/in/kalvinbaranga" target="_blank" rel="noreferrer" className="social-link"><FaLinkedin size={18} /> LinkedIn</a>
+            <a href="https://github.com/TheeBaranga" target="_blank" rel="noreferrer" className="social-link"><FaGithub size={18} /> GitHub</a>
+          </div>
+        </div>
+        <footer className="mt-24 flex flex-col gap-3 border-t border-paper/15 pt-7 text-sm text-paper/45 sm:flex-row sm:items-center sm:justify-between"><p>© {new Date().getFullYear()} Kalvin Baranga</p><p>Designed and built in Nairobi.</p></footer>
+      </div></SectionWrapper>
+    </section>
+  );
+}
 export default Contact;

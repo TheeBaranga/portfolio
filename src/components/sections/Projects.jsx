@@ -1,99 +1,22 @@
-import ProjectCard from "../ui/ProjectCard";
 import { projects } from "../../data/projects";
-import { motion } from "framer-motion";
+import ProjectCard from "../ui/ProjectCard";
+import SectionWrapper from "../ui/SectionWrapper";
 
 function Projects() {
-  const featuredProjects = projects.filter((project) => project.featured);
-  const otherProjects = projects.filter((project) => !project.featured);
-
+  const selectedProjects = projects.filter((project) =>
+    ["Motii", "Sleep Health Predictor", "Car Fault Diagnosis Expert System", "E-Commerce Platform"].includes(project.title)
+  );
   return (
-    <section id="projects" className="relative py-24">
-      <div className="mx-auto max-w-6xl px-6">
-
-        {/* Section heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <p className="mb-3 font-mono text-sm uppercase tracking-[0.2em] text-blue-400">
-            Selected Work
-          </p>
-
-          <h2 className="max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl">
-            Things I've built.
-          </h2>
-
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-400">
-            A mix of products I'm building, ideas I've explored, and projects
-            that have taught me something along the way.
-          </p>
-        </motion.div>
-
-        {/* Featured projects */}
-        <div className="space-y-8">
-          {featuredProjects[0] && (
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
-            >
-              <ProjectCard project={featuredProjects[0]} />
-            </motion.div>
-          )}
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {featuredProjects.slice(1, 3).map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.5,
-                  delay: (index + 1) * 0.12,
-                }}
-              >
-                <ProjectCard project={project} />
-              </motion.div>
-            ))}
-          </div>
+    <section id="projects" className="section-pad border-t border-line px-6">
+      <SectionWrapper><div className="mx-auto max-w-6xl">
+        <div className="grid gap-8 lg:grid-cols-[16rem_1fr] lg:gap-20">
+          <p className="eyebrow">03 / Selected work</p>
+          <div><h2 className="section-title">Projects that show how I think and what I’m learning.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-muted">Real work, presented honestly — including what’s live, what’s an academic build, and what’s still in progress.</p></div>
         </div>
-
-        {/* More projects */}
-        {otherProjects.length > 0 && (
-          <motion.div
-            className="mt-20"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="mb-8 flex items-center gap-4">
-              <h3 className="text-2xl font-semibold text-white">
-                More Projects
-              </h3>
-
-              <div className="h-px flex-1 bg-slate-800" />
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2">
-              {otherProjects.map((project) => (
-                <ProjectCard
-                  key={project.title}
-                  project={project}
-                />
-              ))}
-            </div>
-          </motion.div>
-        )}
-
-      </div>
+        <div className="mt-16 space-y-6">{selectedProjects.map((project, index) => <ProjectCard key={project.title} project={project} index={index} />)}</div>
+        <div className="mt-10 flex justify-end"><a href="https://github.com/TheeBaranga?tab=repositories" target="_blank" rel="noreferrer" className="button-secondary">See all repositories ↗</a></div>
+      </div></SectionWrapper>
     </section>
   );
 }
-
 export default Projects;
