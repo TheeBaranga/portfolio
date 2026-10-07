@@ -12,7 +12,7 @@ function Contact() {
           <div className="space-y-4 border-t border-paper/15 pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
             <a href="mailto:motiitechnologies@gmail.com" className="social-link"><Mail size={18} /> Motii business enquiries</a>
             <a href="mailto:kalvinkiprop@gmail.com" className="social-link"><Mail size={18} /> Email</a>
-            <a href="https://www.linkedin.com/in/kalvin-baranga-3759a12aa/" target="_blank" rel="noreferrer" className="social-link"><FaLinkedin size={18} /> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/kalvinbaranga/" target="_blank" rel="noreferrer" className="social-link"><FaLinkedin size={18} /> LinkedIn</a>
             <a href="https://github.com/TheeBaranga" target="_blank" rel="noreferrer" className="social-link"><FaGithub size={18} /> GitHub</a>
           </div>
         </div>
