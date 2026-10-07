@@ -19,7 +19,7 @@ function Hero() {
             <p className="eyebrow">Right now</p>
             <div className="mt-5 space-y-6">
               <div><p className="text-sm text-subtle">Building</p><p className="mt-1 text-lg font-medium text-ink">Motii</p><p className="mt-2 leading-6 text-muted">A live garage management platform for vehicle jobs, repair updates, quotations and payments.</p></div>
-              <div className="border-t border-line pt-5"><p className="text-sm text-subtle">Going deeper on</p><p className="mt-1 font-medium text-ink">Django, APIs & product thinking</p></div>
+              <div className="border-t border-line pt-5"><p className="text-sm text-subtle">Working across</p><p className="mt-1 font-medium text-ink">Product, software & customer experience</p></div>
               <div className="flex items-center gap-2 border-t border-line pt-5 text-sm font-medium text-ink"><span className="h-2 w-2 rounded-full bg-green-500" /> Open to partnerships & engineering opportunities</div>
             </div>
           </aside>

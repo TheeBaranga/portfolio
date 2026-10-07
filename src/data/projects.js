@@ -5,7 +5,7 @@ export const projects = [
     title: "Motii",
     description:
       "A garage management platform alongside a car-owner app. The live garage system covers vehicle intake, checking, quotations, repair tracking, payments and collection.",
-    takeaway: "Customer-led workflow design, backend business logic, responsive interfaces and deployment.",
+    takeaway: "Customer-led workflow design, business rules, responsive interfaces and deployment.",
     tech: ["Django", "REST APIs", "JavaScript", "React Native", "Expo"],
     github: "",
     live: "https://garage.motiiapp.co.ke/garage/",

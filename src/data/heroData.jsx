@@ -1,33 +1,22 @@
 export const heroData = {
-  badge: "OPEN TO INTERNSHIPS",
-
-  title: "Building Secure Software,\nNot Just Software.",
-
-  name: "Kalvin Baranga",
-
-  subtitle:
-    "Software Engineering Student specializing in Application Security and DevSecOps.",
-
-  description:
-    "I build secure full-stack applications and integrate security into every stage of the Software Development Life Cycle.",
-
-  roles: [
-    "Building secure APIs.",
-    "Automating security pipelines.",
-    "Finding vulnerabilities before attackers do.",
-    "Integrating security into CI/CD.",
-    "Designing software that can be trusted."
+  "badge": "FOUNDER \u2022 SOFTWARE ENGINEERING \u2022 PRODUCT",
+  "title": "Building Ideas Into\nReal Products.",
+  "name": "Kalvin Baranga",
+  "subtitle": "Founder of Danafair Technologies and Software Engineering student at USIU-Africa.",
+  "description": "I build practical software around real business workflows, from product decisions and interfaces to application logic and deployment.",
+  "roles": [
+    "Building web and mobile products.",
+    "Turning customer feedback into useful workflows.",
+    "Developing Motii and Danafair Technologies."
   ],
-
-  stack: [
-    "C#",
-    "Java",
+  "stack": [
     "Python",
     "JavaScript",
-    "Docker",
-    "GitHub Actions",
-    "Linux",
-    "MySQL",
-    "OWASP"
+    "React",
+    "Django",
+    "React Native",
+    "Expo",
+    "SQL",
+    "Git"
   ]
 };

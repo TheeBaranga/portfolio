@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="" alt="Kalvin Baranga portfolio preview" width="100%" />
-</p>
-
 <div align="center">
 
 # Kalvin Baranga — Portfolio
@@ -26,7 +22,7 @@
 
 My personal portfolio presents the projects I am building and the direction I am developing as a software engineer.
 
-I am a third-year Software Engineering student at USIU-Africa and a full-stack developer with a growing focus on backend and product engineering. The site is designed to communicate that story clearly: ambitious, grounded, and supported by real work.
+I am the Founder & CEO of Danafair Technologies and a Software Engineering student at USIU-Africa, working across product design, full-stack development and deployment. The site is designed to communicate that story clearly: ambitious, grounded, and supported by real work.
 
 ## Design direction
 
@@ -47,7 +43,7 @@ The layout is responsive across small phones, larger mobile devices, tablets, an
 
 ## Featured work
 
-- **Motii** — A vehicle maintenance and intelligence platform that helps drivers stay ahead of maintenance, renewals, and the surprises of car ownership.
+- **Motii** — A garage management platform covering vehicle jobs, repair updates, quotations, payments and collection, alongside a mobile app for car owners.
 - **Sleep Health Predictor** — An end-to-end machine-learning application served through a Flask interface.
 - **Car Fault Diagnosis Expert System** — A rule-based system for reasoning over vehicle symptoms and potential faults.
 - **E-Commerce Platform** — A modular JavaScript storefront with asynchronous product loading, cart management, and order tracking.

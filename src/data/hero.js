@@ -1,35 +1,24 @@
 export const hero = {
-  badge: "SOFTWARE ENGINEERING • FULL-STACK • BACKEND",
-
-  heading: "Building Ideas Into\nReal Products.",
-
-  name: "Kalvin Baranga",
-
-  subtitle:
-    "Software Engineering student and Full-Stack Developer with a growing focus on backend development.",
-
-  description:
-    "I like taking ideas from ‘what if?’ to something that actually works — figuring out the logic, building the backend, connecting the pieces, and learning a lot along the way.",
-
-  buttons: {
-    primary: "View My Work",
-    secondary: "Download Resume",
+  "badge": "FOUNDER \u2022 SOFTWARE ENGINEERING \u2022 PRODUCT",
+  "heading": "Building Ideas Into\nReal Products.",
+  "name": "Kalvin Baranga",
+  "subtitle": "Founder of Danafair Technologies and Software Engineering student at USIU-Africa.",
+  "description": "I build practical software around real business workflows, from product decisions and interfaces to application logic and deployment.",
+  "buttons": {
+    "primary": "View My Work",
+    "secondary": "Download Resume"
   },
-
-  status: "Open to Opportunities",
-
-  focus: [
-    "Full-Stack Development",
-    "Backend Development",
-    "Product Engineering",
+  "status": "Open to partnerships & engineering opportunities",
+  "focus": [
+    "Software Development",
+    "Product Development",
+    "Business Operations"
   ],
-
-  languages: [
+  "languages": [
     "Python",
     "Django",
     "JavaScript",
-    "React",
+    "React"
   ],
-
-  learning: [],
+  "learning": []
 };
