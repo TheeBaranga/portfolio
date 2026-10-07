@@ -1,14 +1,16 @@
 export const projects = [
   {
     featured: true,
-    status: "Currently Building",
+    status: "Live · Actively developing",
     title: "Motii",
     description:
-      "A vehicle maintenance and intelligence platform built to help drivers stay ahead of mileage, servicing, insurance, and the everyday details that keep a car healthy.",
-    takeaway: "Product architecture across the mobile experience, data model, and API layer.",
-    tech: ["React Native", "Expo", "Django", "DRF", "SQLite"],
+      "A garage management platform alongside a car-owner app. The live garage system covers vehicle intake, checking, quotations, repair tracking, payments and collection.",
+    takeaway: "Customer-led workflow design, backend business logic, responsive interfaces and deployment.",
+    tech: ["Django", "REST APIs", "JavaScript", "React Native", "Expo"],
     github: "",
-    live: "",
+    live: "https://garage.motiiapp.co.ke/garage/",
+    linkLabel: "Open garage sign-in",
+    caseStudy: true,
     image: `${import.meta.env.BASE_URL}images/motii.png`,
   },
 

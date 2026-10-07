@@ -101,7 +101,7 @@ src/
 ## Connect
 
 - [GitHub](https://github.com/TheeBaranga)
-- [LinkedIn](https://www.linkedin.com/in/kalvinbaranga)
+- [LinkedIn](https://www.linkedin.com/in/kalvin-baranga-3759a12aa/)
 - [Portfolio](https://theebaranga.github.io/portfolio/)
 
 ---
