@@ -4,7 +4,7 @@ import SectionWrapper from "../ui/SectionWrapper";
 
 function Projects() {
   const selectedProjects = projects.filter((project) =>
-    ["Motii", "Sleep Health Predictor", "Car Fault Diagnosis Expert System", "E-Commerce Platform"].includes(project.title)
+    ["Motii Workshop", "Sleep Health Predictor", "Car Fault Diagnosis Expert System", "E-Commerce Platform"].includes(project.title)
   );
   return (
     <section id="projects" className="section-pad border-t border-line px-6">
